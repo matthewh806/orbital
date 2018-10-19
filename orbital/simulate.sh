@@ -1,3 +1,9 @@
+if [ ! -d "/build" ]
+then
+    echo "build dir. not found, calling Makefile"
+    make
+fi
+
 echo 'running orbital'
 ./build/orbital $1 $2
 
