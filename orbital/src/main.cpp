@@ -61,6 +61,16 @@ void run_simulation(Integrator integrator, int iterations, int data_frequency) {
 }
 
 int main(int argc, const char * argv[]) {
+    
+    if(argc < 3) {
+        std::cout << "Error: Received " << argc << " argument(s), expected 3" << std::endl;
+        std::cout << "Pattern: ./orbital [iterations] [timestep]" << std::endl;
+        return 1;
+    }
+    
+    long iterations = strtol(argv[1], NULL, 10);
+    long timestep = strtol(argv[2], NULL, 10);
+    
     std::vector<body> bodies;
     
     // TODO: Make some test cases with simpler systems.
@@ -76,10 +86,10 @@ int main(int argc, const char * argv[]) {
 //    bodies.push_back(solar_system::pluto);
     
     // 1 day in seconds: 86400
-    OrbitalMechanics::Euler orbit(bodies, 10);
+    OrbitalMechanics::Euler orbit(bodies, timestep);
     
-    std::cout << " Beginning of simulation! " << std::endl;
-    run_simulation(orbit, (int)((365 * 86400) / 10), 1e3);
+    std::cout << " Beginning of simulation - iterations: " << iterations << ", timestep: " << timestep <<std::endl;
+    run_simulation(orbit, (int)(iterations), (int)(iterations / timestep));
     
     std::cout << " End of simulation! " << std::endl;
     std::cin;

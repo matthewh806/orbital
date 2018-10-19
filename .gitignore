@@ -62,4 +62,4 @@ DerivedData/
 *.swp
 
 # ----- output ------
-*.wav
+*.dat

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F0E38162178C3EF002F9B33 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E38152178C3EF002F9B33 /* main.cpp */; };
-		4F0E381F2178C713002F9B33 /* OrbitalMechanics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E381D2178C713002F9B33 /* OrbitalMechanics.cpp */; };
+		4F0E38262179ED19002F9B33 /* OrbitalMechanics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E38222179ED19002F9B33 /* OrbitalMechanics.cpp */; };
+		4F0E38272179ED19002F9B33 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E38252179ED19002F9B33 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +25,10 @@
 
 /* Begin PBXFileReference section */
 		4F0E38122178C3EF002F9B33 /* orbital */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = orbital; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F0E38152178C3EF002F9B33 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		4F0E381C2178C45B002F9B33 /* data_structures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = data_structures.h; sourceTree = "<group>"; };
-		4F0E381D2178C713002F9B33 /* OrbitalMechanics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OrbitalMechanics.cpp; sourceTree = "<group>"; };
-		4F0E381E2178C713002F9B33 /* OrbitalMechanics.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OrbitalMechanics.hpp; sourceTree = "<group>"; };
+		4F0E38222179ED19002F9B33 /* OrbitalMechanics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OrbitalMechanics.cpp; sourceTree = "<group>"; };
+		4F0E38232179ED19002F9B33 /* OrbitalMechanics.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OrbitalMechanics.hpp; sourceTree = "<group>"; };
+		4F0E38242179ED19002F9B33 /* data_structures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data_structures.h; sourceTree = "<group>"; };
+		4F0E38252179ED19002F9B33 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +61,20 @@
 		4F0E38142178C3EF002F9B33 /* orbital */ = {
 			isa = PBXGroup;
 			children = (
-				4F0E38152178C3EF002F9B33 /* main.cpp */,
-				4F0E381C2178C45B002F9B33 /* data_structures.h */,
-				4F0E381D2178C713002F9B33 /* OrbitalMechanics.cpp */,
-				4F0E381E2178C713002F9B33 /* OrbitalMechanics.hpp */,
+				4F0E38212179ED19002F9B33 /* src */,
 			);
 			path = orbital;
+			sourceTree = "<group>";
+		};
+		4F0E38212179ED19002F9B33 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E38222179ED19002F9B33 /* OrbitalMechanics.cpp */,
+				4F0E38232179ED19002F9B33 /* OrbitalMechanics.hpp */,
+				4F0E38242179ED19002F9B33 /* data_structures.h */,
+				4F0E38252179ED19002F9B33 /* main.cpp */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +134,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F0E38162178C3EF002F9B33 /* main.cpp in Sources */,
-				4F0E381F2178C713002F9B33 /* OrbitalMechanics.cpp in Sources */,
+				4F0E38272179ED19002F9B33 /* main.cpp in Sources */,
+				4F0E38262179ED19002F9B33 /* OrbitalMechanics.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

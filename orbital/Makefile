@@ -5,7 +5,7 @@ CXXFLAGS += -Wc++11-extensions -std=c++11
 OUTPUTDIR = ./build/
 MKDIR = mkdir -p $(OUTPUTDIR)
 
-CXXSOURCES += $(wildcard *.cpp)
+CXXSOURCES += $(wildcard src/*.cpp src/*/*.cpp)
 
 all: $(PROJECT)
 

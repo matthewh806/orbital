@@ -1,0 +1,60 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CXX	orbital/Makefile	/^CXX=g++$/;"	m
+Euler	orbital/src/OrbitalMechanics.hpp	/^        Euler(std::vector<body> bodies, double time_step=1) :$/;"	f	class:OrbitalMechanics::Euler
+Euler	orbital/src/OrbitalMechanics.hpp	/^    class Euler : Integrator  {$/;"	c	namespace:OrbitalMechanics
+Integrator	orbital/src/OrbitalMechanics.hpp	/^    class Integrator {$/;"	c	namespace:OrbitalMechanics
+MKDIR	orbital/Makefile	/^MKDIR = mkdir -p $(OUTPUTDIR)$/;"	m
+OUTPUTDIR	orbital/Makefile	/^OUTPUTDIR = .\/build\/$/;"	m
+OrbitalMechanics	orbital/src/OrbitalMechanics.hpp	/^namespace OrbitalMechanics {$/;"	n
+OrbitalMechanics_hpp	orbital/src/OrbitalMechanics.hpp	/^#define OrbitalMechanics_hpp$/;"	d
+PROJECT	orbital/Makefile	/^PROJECT = orbital$/;"	m
+bodies	orbital/plotter.py	/^    bodies = read_bodies(names)$/;"	v
+body	orbital/src/data_structures.h	/^struct body {$/;"	s
+calculate_single_body_acceleration	orbital/src/OrbitalMechanics.cpp	/^point OrbitalMechanics::Euler::calculate_single_body_acceleration(int index) {$/;"	f	class:OrbitalMechanics::Euler
+compute_gravity_for_step	orbital/src/OrbitalMechanics.cpp	/^void OrbitalMechanics::Euler::compute_gravity_for_step() {$/;"	f	class:OrbitalMechanics::Euler
+compute_velocity	orbital/src/OrbitalMechanics.cpp	/^void OrbitalMechanics::Euler::compute_velocity() {$/;"	f	class:OrbitalMechanics::Euler
+data_structures_h	orbital/src/data_structures.h	/^#define data_structures_h$/;"	d
+get_bodies	orbital/src/OrbitalMechanics.hpp	/^        std::vector<body>& get_bodies() { return m_bodies; }$/;"	f	class:OrbitalMechanics::Euler
+location	orbital/src/data_structures.h	/^    point location;$/;"	m	struct:body
+locations	orbital/src/data_structures.h	/^    std::vector<point> locations;$/;"	m	struct:body
+m_bodies	orbital/src/OrbitalMechanics.hpp	/^        std::vector<body> m_bodies;$/;"	m	class:OrbitalMechanics::Euler
+m_time_step	orbital/src/OrbitalMechanics.hpp	/^        double m_time_step;$/;"	m	class:OrbitalMechanics::Euler
+main	orbital/src/main.cpp	/^int main(int argc, const char * argv[]) {$/;"	f
+mass	orbital/src/data_structures.h	/^    double mass;$/;"	m	struct:body
+math	orbital/plotter.py	/^import math$/;"	i
+matplotlib	orbital/plotter.py	/^import matplotlib.pyplot as plot$/;"	i
+name	orbital/src/data_structures.h	/^    std::string name;$/;"	m	struct:body
+names	orbital/plotter.py	/^    names = sys.argv[1:]$/;"	v
+neptune	orbital/src/OrbitalMechanics.hpp	/^    static body neptune = { { 0, 4.5e12, 0 }, { 5477,0,0 }, 1e26, "neptune" };$/;"	m	namespace:solar_system
+operator *	orbital/src/data_structures.h	/^    point operator*(double a) {$/;"	f	struct:point
+operator *	orbital/src/data_structures.h	/^    point operator*(point a) {$/;"	f	struct:point
+operator +	orbital/src/data_structures.h	/^    point operator+(double a) {$/;"	f	struct:point
+operator +	orbital/src/data_structures.h	/^    point operator+(point a) {$/;"	f	struct:point
+operator +=	orbital/src/data_structures.h	/^    point operator+=(point a) {$/;"	f	struct:point
+operator -	orbital/src/data_structures.h	/^    point operator-(double a) {$/;"	f	struct:point
+operator -	orbital/src/data_structures.h	/^    point operator-(point a) {$/;"	f	struct:point
+operator /	orbital/src/data_structures.h	/^    point operator\/(double a) {$/;"	f	struct:point
+operator /	orbital/src/data_structures.h	/^    point operator\/(point a) {$/;"	f	struct:point
+output_states	orbital/src/main.cpp	/^static void output_states(const std::vector<body>& bodies) {$/;"	f	file:
+plot	orbital/plotter.py	/^import matplotlib.pyplot as plot$/;"	i
+plot_output	orbital/plotter.py	/^def plot_output(bodies, outFile = None):$/;"	f
+pluto	orbital/src/OrbitalMechanics.hpp	/^    static body pluto = { { 0, 7.3e12, 0 }, { 4748,0,0 }, 1.3e22,"pluto" };$/;"	m	namespace:solar_system
+point	orbital/src/data_structures.h	/^struct point {$/;"	s
+print_state	orbital/src/main.cpp	/^static void print_state(std::vector<body>& bodies) {$/;"	f	file:
+random	orbital/plotter.py	/^import random$/;"	i
+read_bodies	orbital/plotter.py	/^def read_bodies(files=[]):$/;"	f
+run_simulation	orbital/src/main.cpp	/^void run_simulation(Integrator integrator, int iterations, int data_frequency) {$/;"	f
+solar_system	orbital/src/OrbitalMechanics.hpp	/^namespace solar_system {$/;"	n
+sys	orbital/plotter.py	/^import sys$/;"	i
+update_location	orbital/src/OrbitalMechanics.cpp	/^void OrbitalMechanics::Euler::update_location() {$/;"	f	class:OrbitalMechanics::Euler
+uranus	orbital/src/OrbitalMechanics.hpp	/^    static body uranus = { { 0, 2.8e12, 0 },{ 6835, 0, 0 }, 8.7e25, "uranus" };$/;"	m	namespace:solar_system
+velocity	orbital/src/data_structures.h	/^    point velocity;$/;"	m	struct:body
+write_state	orbital/src/main.cpp	/^static void write_state(std::vector<body>& bodies) {$/;"	f	file:
+x	orbital/src/data_structures.h	/^    double x;$/;"	m	struct:point
+y	orbital/src/data_structures.h	/^    double y;$/;"	m	struct:point
+z	orbital/src/data_structures.h	/^    double z;$/;"	m	struct:point
